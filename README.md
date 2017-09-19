@@ -1,5 +1,5 @@
 # Devello
-This is the code for rn-bootcamp's implementation of Trello
+Here's the boilerplate code for you to start working on creating an implementation of Devello! Listed below is rough structure of the components in this proejct. Good luck!
 
 ## Components
 - [ ] App
