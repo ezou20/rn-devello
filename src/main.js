@@ -2,15 +2,15 @@ import Expo, { Constants } from 'expo';
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
-import Board from './components/Board';
+import MainScreen from './screens/MainScreen';
 
 class App extends React.Component {
   render() {
     return (
-      <ScrollView style={styles.container}>
+      <View style={styles.container}>
         <Text>HSA Devello</Text>
-        <Board name="Hi guys"/>
-      </ScrollView>
+        <MainScreen name="Hi guys"/>
+      </View>
     );
   }
 }

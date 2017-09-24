@@ -1,6 +1,16 @@
-import React, { Component } from 'react';
-import { StyleSheet, View, TouchableOpacity, Text } from 'react-native';
-import PropTypes from 'prop-types';
+// this is a sample "static" or "dumb" component that simply renders a button, 
+// which is just an absraction of the TouchableOpacity component (a native component
+// from React Native). Feel free to play around with it.
+
+import React, { Component } from 'react'
+import { 
+  StyleSheet,
+  TouchableOpacity,
+  Text,
+  View,
+} from 'react-native'
+import PropTypes from 'prop-types'
+import { fontFamily } from '../styles'
 
 export default class Button extends Component {
   static propTypes = {
@@ -13,11 +23,12 @@ export default class Button extends Component {
       'close',
       'default',
     ]).isRequired,
-  };
+  }
 
   static defaultProps = {
     text: 'Click Me!',
-  };
+  }
+
   render() {
     return (
       <TouchableOpacity
@@ -26,7 +37,7 @@ export default class Button extends Component {
       >
         <Text style={styles.text}>{this.props.text}</Text>
       </TouchableOpacity>
-    );
+    )
   }
 }
 
@@ -42,6 +53,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 10,
     color: '#9b0200',
+    fontFamily
   },
   default: {
     backgroundColor: '#898989',
