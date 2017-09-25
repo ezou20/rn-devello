@@ -1,10 +1,10 @@
 import Expo, { Constants } from 'expo';
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
 import MainScreen from './screens/MainScreen';
 
-class App extends React.Component {
+class Main extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
   },
 });
 
-Expo.registerRootComponent(App);
+Expo.registerRootComponent(Main);

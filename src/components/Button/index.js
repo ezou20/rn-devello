@@ -11,7 +11,18 @@ import {
 } from 'react-native'
 import PropTypes from 'prop-types'
 import { fontFamily } from '../styles'
-
+// *** ideally a dumb componet should just be a function I think
+// export default Button = props => (
+//   return (
+//       <TouchableOpacity
+//         onPress={this.props.onClick}
+//         style={[styles.button, styles[this.props.style]]}
+//       >
+//         <Text style={styles.text}>{this.props.text}</Text>
+//       </TouchableOpacity>
+//     )
+//   }
+// )
 export default class Button extends Component {
   static propTypes = {
     text: PropTypes.string,
